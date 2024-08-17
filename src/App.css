@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Sankofa Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/sankofa/Ktk1ALSRd4LucUDghJ2rTqXOoh3HEKOY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IM Fell Double Pica SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/IMFellDoublePicaSC/neIazDmuiMkFo6zj_sHpQ8teNbWlwBB_hXjJ0YoOew.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.h1__title {
+  font-family: 'Sankofa Display';
+  font-size: 5rem;
+  cursor: default;
+}
+
+.div__accordion {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.div__accordion-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 50ch;
+}
+
+.h2__accordion-header {
+  font-family: "IM Fell Double Pica SC";
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 2rem;
+  transition: all 0.2s;
+  margin: 0.5em
+}
+
+@media (hover: hover) {
+  .h2__accordion-header:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+.div__accordion-content--expanded {
+  transform-origin: top;
+  transition:
+    font-size 0.2s,
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.div__accordion-content--collapsed {
+  font-size: 0;
+  transform: scale(0);
+  opacity: 0;
+  overflow: hidden;
+  transform-origin: top;
+  max-height: 0;
+  transition:
+    font-size 0.2s,
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.div__accordion-section img {
+  width: 100%;
+}
+
+.div__caption {
+  color: grey;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.div__accordion-section p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.div__accordion-section li {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.a__big-link {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color:darkcyan;
+}
+
+@media (hover: hover) {
+  .a__big-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
