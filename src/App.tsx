@@ -9,17 +9,16 @@ function About() {
       <img src={coverUrl}/>
       <div className='div__caption'>Crop of an illustration titled "Repurposed office building", by <a href='https://dustinjacobus.com/' target="_blank">Dustin Jacobus</a> under license CC BY-NC-SA 4.0, featured as the cover of <a href='https://www.sciphijournal.org/' target="_blank">SciPhi journal</a> in the 2021 Fall issue.</div>
       <p>
-        <b>Solarpunk</b> is a sci-fi aesthetic (and somewhat of a political movement) that is notably utopian rather than dystopian. It is largely based on technology available today (or in the conceivably near future) and is rearranged to benefit human society and nature to a novel degree.
-      </p>
-      <p>
-        In the solarpunk genre, we see these common themes:
+        <b>Solarpunk</b> is a sci-fi aesthetic and political movement with the following characteristics:
       </p>
       <ul>
+        <li>Optimistic tones over pessimistic</li>
+        <li>Real scientific basis</li>
         <li>Sustainable practices</li>
         <li>Healthy community living</li>
         <li>A do-it-yourself ethos</li>
         <li>Nature integration</li>
-        <li>A deliberate/careful adoption of technology both new and old.</li>
+        <li>A deliberate/artful adoption of technology both new and old</li>
       </ul>
       <p>
         The <b>Colorado Solarpunks</b> is our fan-group based out of Littleton, Colorado (that's near Denver). We are working to bring the solarpunk ideals into the public consciousness.
@@ -63,7 +62,7 @@ function Events() {
       <p>
         Please RSVP to events there.
       </p>
-      <a className='a__big-link' href='https://meetup.com/solarpunk-club/' target="_blank">Meetup Events</a>
+      <a className='a__big-link' href='https://meetup.com/colorado-solarpunks/' target="_blank">Meetup Events</a>
     </>
   )
 }
