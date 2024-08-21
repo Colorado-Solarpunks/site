@@ -67,6 +67,24 @@ function Events() {
   )
 }
 
+function Wiki() {
+  return (
+    <>
+      <p>Our Wiki is open for anyone to contribute to. It covers club bookkeeping, club projects, and solarpunk referential material for creating stories/art.</p>
+      <a className='a__big-link' href='https://wiki.coloradosolarpunks.org/' target="_blank">To the Wiki</a>
+    </>
+  )
+}
+
+function GitHub() {
+  return (
+    <>
+      <p>Our GitHub organization houses the website code along with any club-related projects that fit.</p>
+      <a className='a__big-link' href='https://github.com/Colorado-Solarpunks' target="_blank">To GitHub</a>
+    </>
+  )
+}
+
 interface IAccordionSection {
   Title: string;
   Element: React.ReactNode;
@@ -84,6 +102,14 @@ const sections: IAccordionSection[] = [
   {
     Title: 'Events',
     Element: <Events/>
+  },
+  {
+    Title: 'Wiki',
+    Element: <Wiki/>
+  },
+  {
+    Title: 'GitHub',
+    Element: <GitHub/>
   }
 ];
 
